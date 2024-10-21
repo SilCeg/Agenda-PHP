@@ -1,0 +1,15 @@
+
+.month {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: calc(30% - 20px); /* Ajuste a largura para caber 3 elementos por linha */
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Garante que padding e borda estejam dentro da largura */
+}
+.month h2 {
+    margin: 0;
+    font-size: 20px;
+}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/10/2024 às 01:19
+-- Tempo de geração: 22/10/2024 às 01:17
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -43,7 +43,7 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`ID`, `nomeEvento`, `dataEvento`, `horaInicio`, `horaFim`, `descEvento`, `localEvento`, `respEvento`) VALUES
-(1, 'Dentista', '2024-10-11', '17:45:00.00000', '18:20:00.00000', 'Realizar uma limpeza', 'Rua Jabaquara, Pq Alvorada', 'Dr. Carlos');
+(2, '111', '0000-00-00', '21:20:00.00000', '22:20:00.00000', 'sssss11', 'sss', 'ssss22');
 
 --
 -- Índices para tabelas despejadas
@@ -54,6 +54,16 @@ INSERT INTO `eventos` (`ID`, `nomeEvento`, `dataEvento`, `horaInicio`, `horaFim`
 --
 ALTER TABLE `eventos`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT para tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `eventos`
+--
+ALTER TABLE `eventos`
+  MODIFY `ID` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
