@@ -24,10 +24,13 @@ echo ("Cadastro realizado com sucesso!");
 
 $resultadoSelect = mysqli_query($conexao, "SELECT * FROM eventos");
 
-echo $resultadoSelect;
+echo "<table border= 3px><tr><td>Nome do Evento</td><td>Data do Evento</td><td>Horário de Inicio</td> <td>Horário de término</td> <td> Descrição do Evento</td> <td> Local do Evento </td> <td> Responsável pelo Evento</td></tr>";
 
+while ($escrever = mysqli_fetch_array ($resultadoSelect)) {
+    echo "</td><td>" . $escrever['ID'] . "</td><td>" . $escrever['nomeEvento'] . "</td><td>" . $escrever['dataEvento'] . "</td></tr>";
+}
 
-
+echo "</table>";
 
 mysqli_close($conexao);
 ?>
